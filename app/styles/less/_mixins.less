@@ -1,0 +1,23 @@
+/*** border radius mixin ***/
+.border-radius(@radius) {
+    @radiusValue: @radius;
+    @radRem: @radius/10;
+    -webkit-border-radius: ~"@{radiusValue}px";
+    -webkit-border-radius: ~"@{radRem}rem";
+    -moz-border-radius: ~"@{radiusValue}px";
+    -moz-border-radius: ~"@{radRem}rem";    
+    border-radius: ~"@{radiusValue}px";
+    border-radius: ~"@{radRem}rem";
+}
+
+// Unit fallback
+@unitBaseSize: 10;  // Default font-size;
+
+.unit-fallback(@property; @units) {
+    // @property [CSS property name]
+    // @units [size units in pixels]
+    @pxValue: @units;
+    @remValue: (@units / @unitBaseSize);
+    @{property}: ~"@{pxValue}px";
+    @{property}: ~"@{remValue}rem";
+}

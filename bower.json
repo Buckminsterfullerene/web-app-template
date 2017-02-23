@@ -1,0 +1,33 @@
+{
+  "name": "webapptemplate",
+  "private": true,
+  "version": "1.0.0",
+  "appPath": "app",
+  "moduleName": "webapptemplate",
+  "dependencies": {
+    "bootstrap-sass": "~3.3.7",
+    "bootstrap": "~3.3.7"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "less/bootstrap.less",
+        "dist/css/bootstrap.css",
+        "dist/js/bootstrap.js"
+      ]
+    },
+    "bootstrap-sass": {
+      "main": [
+        "assets/stylesheets/_bootstrap.scss",
+        "assets/fonts/bootstrap/*",
+        "assets/javascripts/bootstrap.js"
+      ]
+    }
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "jquery": "^3.0.0",
+    "bootstrap": "^3.3.7"
+  }
+}
