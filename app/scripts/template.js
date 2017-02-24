@@ -42,5 +42,19 @@ var TEMPLATE = TEMPLATE || {};
         return {};
     };
     
+    /**
+     * @function
+     * @name setData
+     * @param {Object} foo An object. 
+     * @description This function does something.
+     * @memberOf TEMPLATE
+     * @returns {Object}
+     */
+    template.setData = function (foo) {
+        console.info('setData()');
+        
+        return {};
+    };
+    
     return template;
 })(TEMPLATE, jQuery);
